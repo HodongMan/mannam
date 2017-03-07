@@ -1,0 +1,57 @@
+<div class="login-boundary container">
+  <div class="row ">
+    <div class="col-sm-12 login-logo"></div>
+
+    <div class="col-sm-12">
+      <form class="form" name="form" ng-submit="vm.write(form)" novalidate>
+
+        <div>
+          <button class="btn btn-inverse btn-lg btn-login login-btn" type="submit">
+          </button>
+        </div>
+
+
+    <div class="form-group">
+      <p>필수 입력 정보</p>
+      <form>
+        <select name="team" ng-model="vm.notice.team">
+                <option value="Nexters">Nexters</option>
+        </select>
+      </form>
+      <input type="text" name="title" class="form-control" ng-model="vm.notice.title" placeholder="제목"
+                    required/>
+      <!-- <input type="text" name="team" class="form-control" ng-model="vm.notice.team" placeholder="팀 공지"
+             required/> -->
+    </div>
+
+    <div class="form-group">
+      <p>옵션</p>
+      <input type="text" name="date" class="form-control" ng-model="vm.notice.date" placeholder="2017년 2월 14일"
+                    required/>
+      <input type="text" name="location" class="form-control" ng-model="vm.notice.location" placeholder="넥터 대강당"
+                                  required/>
+      <!-- <input type="text" name="name5" class="form-control" ng-model="vm.notice.map" placeholder="넥터 대강당"
+                                                              required/> -->
+    </div>
+
+    <div class="form-group">
+      <p>내용</p>
+      <textarea name="content" rows="8" cols="80" ng-model="vm.notice.content"></textarea>
+    </div>
+
+    </form>
+
+</div>
+
+<style type="text/css">
+        textarea {
+          width: 100%;
+        }
+
+</style>
+
+      </form>
+    </div>
+
+  </div>
+</div>
